@@ -1,0 +1,45 @@
+.autocomplete-field {
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  box-sizing: border-box;
+  transition: all 0.1s ease;
+  cursor: default;
+  outline: 0;
+
+  &.focused {
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #656565;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04);
+  }
+
+  &__input {
+    width: 100%;
+    padding: 4px 8px;
+    outline: 0;
+    border: 0;
+
+    color: #6c757d;
+
+    &::placeholder {
+      color: lightgray;
+    }
+  }
+
+  &__close-button {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+
+    color: #6c757d;
+    margin-right: 4px;
+
+    user-select: none;
+    cursor: pointer;
+  }
+}

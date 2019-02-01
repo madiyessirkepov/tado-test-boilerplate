@@ -1,0 +1,25 @@
+@import './autocomplete-field.scss';
+
+#tado-autocomplete {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.dropdown {
+  display: none;
+  background-color: white;
+  padding-top: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04);
+
+  &__item {
+    padding: 4px 8px;
+
+    color: #6c757d;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: lightgray;
+    }
+  }
+}
